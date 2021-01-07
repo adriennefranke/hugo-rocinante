@@ -35,7 +35,7 @@
             <div class="photos">
                 {{ range .Resources }}
                     {{ if in .Name "Pano" }}
-                    {{ $image := .Resize "700x q100" }}
+                    {{ $image := .Resize "3000x q100" }}
                     <a href="{{.RelPermalink}}"  class="full-size">
                         <img src="{{$image.RelPermalink}}" alt="">
                     </a>
